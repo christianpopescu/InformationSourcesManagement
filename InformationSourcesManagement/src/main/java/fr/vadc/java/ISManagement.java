@@ -1,7 +1,7 @@
 package fr.vadc.java;
 
 /**
- * Hello world!
+ * Information Sources management
  *
  */
 public class ISManagement

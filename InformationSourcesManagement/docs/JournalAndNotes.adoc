@@ -1,4 +1,10 @@
 = Journal and Notes
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2021-11-20
+:sectnums:
+:toc:
+:toclevels: 5
+:pdf-page-size: A3
 
 == The pourpose to track the activity on project
 
@@ -10,7 +16,7 @@
 
   mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
 
-*
+* Add assembly java pluggin
 
 
 == Ideas
