@@ -4,7 +4,7 @@ package fr.vadc.java;
  * Hello world!
  *
  */
-public class App 
+public class ISManagement
 {
     public static void main( String[] args )
     {
