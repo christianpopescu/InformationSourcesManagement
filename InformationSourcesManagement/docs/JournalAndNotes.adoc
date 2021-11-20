@@ -6,7 +6,7 @@ v 1.0, 2021-11-20
 :toclevels: 5
 :pdf-page-size: A3
 
-== The pourpose to track the activity on project
+== The purpose to track the activity on project
 
 == Log
 
@@ -16,7 +16,7 @@ v 1.0, 2021-11-20
 
   mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
 
-* Add assembly java pluggin
+* Add assembly java plugin
 
 
 == Ideas
