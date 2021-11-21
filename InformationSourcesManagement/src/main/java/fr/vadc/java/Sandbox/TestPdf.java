@@ -33,4 +33,23 @@ public class TestPdf {
         }
     }
 
+    public static void printPage(File pPdfFile, int pPage) {
+        try {
+            PDDocument document = PDDocument.load(pPdfFile);
+            PDFRenderer pdfRenderer = new PDFRenderer(document);
+            try {
+                BufferedImage bim = pdfRenderer.renderImageWithDPI(pPage, 300, ImageType.RGB);
+                // suffix in filename will be used as the file format
+                String filename = pPdfFile.getAbsolutePath() + "-" + (pPage + 1) + ".png";
+                System.out.println(filename);
+                ImageIOUtil.writeImage(bim, filename, 300);
+            } catch (IOException ex) {
+                //ignore
+            }
+            document.close();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
 }
