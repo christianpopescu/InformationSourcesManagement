@@ -43,6 +43,7 @@ public class TestPdf {
                 String filename = pPdfFile.getAbsolutePath() + "-" + (pPage + 1) + ".png";
                 System.out.println(filename);
                 ImageIOUtil.writeImage(bim, filename, 300);
+                TestSwing.showFile(new File(filename));
             } catch (IOException ex) {
                 //ignore
             }

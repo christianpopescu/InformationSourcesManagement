@@ -42,6 +42,18 @@ v 1.0, 2021-11-20
 
 * Tested *OK*
 
+== 21/11/2021
+
+* Test Select file by Swing.
+
+* Test print first page of selected file.
+
+* Test show image in Swing screen.
+
+* Test resize image with Swing and saver resized file.
+
+* Add ImageHelper class to resize and save image
+
 == Ideas
 
 * Use Apache PDF Box to get information from PDF Files
