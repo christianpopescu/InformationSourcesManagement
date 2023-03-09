@@ -1,0 +1,3 @@
+[submodule "InformationSourcesManagement"]
+	path = InformationSourcesManagement
+	url = ccpprofessional@vs-ssh.visualstudio.com:v3/ccpprofessional/InformationSourcesManagement/InformationSourcesManagement
