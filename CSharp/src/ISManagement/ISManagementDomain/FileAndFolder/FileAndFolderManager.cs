@@ -20,21 +20,26 @@ namespace ISManagementDomain.FileAndFolder
         {
             if (!Directory.Exists(pDirectory)) return;
 
+            RecusiveEnumerateAndApplyAction(pDirectory, pFunctionToApply, pFilePattern);
+
+        }
+
+        private void RecusiveEnumerateAndApplyAction(string pDirectory, Action<string> pFunctionToApply, string pFilePattern)
+        {
+            // Assumption: directory exists as returned by Enumerate File
             // 1. Process files from directory
             var collectionOfFiles = Directory.EnumerateFiles(pDirectory, pFilePattern, SearchOption.AllDirectories);
             foreach (var file in collectionOfFiles)
             {
                 pFunctionToApply(file);
             }
-            
+
             // 2. For each subdirectory recursive process
-
-            // todo enumerate directory
-        }
-
-        private void RecusiveEnumerateAndApplyAction(string pDirectory, Action<string> pFunctionToApply, string pFilePattern)
-        {
-            // todo write recusive function
+            var collectionOfDirectories = Directory.EnumerateDirectories(pDirectory,"*", SearchOption.AllDirectories);
+            foreach (var directory in collectionOfDirectories)
+            {
+                RecusiveEnumerateAndApplyAction(directory, pFunctionToApply, pFilePattern);
+            }
         }
     }
 }
