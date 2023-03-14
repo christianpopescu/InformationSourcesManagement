@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ISManagementDomain.FileAndFolder
 {
-    internal class FileAndFolderManager
+    public class FileAndFolderManager
     {
 
         /// <summary>

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISManagement", "ISManagement\ISManagement.csproj", "{442FB6C4-F119-4E68-A935-DD35BD3EAF4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISManagementDomain", "ISManagementDomain\ISManagementDomain.csproj", "{8209E683-F420-4503-8538-B0B2046545B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISManagementDomain", "ISManagementDomain\ISManagementDomain.csproj", "{8209E683-F420-4503-8538-B0B2046545B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISManagementConsole", "ISManagementConsole\ISManagementConsole.csproj", "{EFC5ECBA-1B46-4584-B8F5-BC974D3C6CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8209E683-F420-4503-8538-B0B2046545B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8209E683-F420-4503-8538-B0B2046545B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8209E683-F420-4503-8538-B0B2046545B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC5ECBA-1B46-4584-B8F5-BC974D3C6CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC5ECBA-1B46-4584-B8F5-BC974D3C6CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC5ECBA-1B46-4584-B8F5-BC974D3C6CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC5ECBA-1B46-4584-B8F5-BC974D3C6CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
