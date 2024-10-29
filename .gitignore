@@ -26,3 +26,6 @@ hs_err_pid*
 obj/
 bin/
 .vs
+
+.idea
+target/
