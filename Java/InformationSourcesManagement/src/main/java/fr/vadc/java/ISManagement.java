@@ -18,7 +18,7 @@ public class ISManagement
         System.out.println( "Hello World!" );
         File homeDirectoryFile;
         try {
-            homeDirectoryFile = new File("F:\\CCP_library");
+            homeDirectoryFile = new File("E:\\CCP_library");
         } catch (NullPointerException ex) {
             homeDirectoryFile =FileSystemView.getFileSystemView().getHomeDirectory();
         }

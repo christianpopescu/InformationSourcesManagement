@@ -54,6 +54,22 @@ v 1.0, 2021-11-20
 
 * Add ImageHelper class to resize and save image
 
+== 31/07/2022
+* Last test in jdk 7
+
+== 29/10/2024
+* Work again on the project as it seems to be the right way to have first page of PDF printed as image.
+
+* Set java version to 21.
+
+* Fix some old dependencies.
+
+* Test again.
+
+
+
+
+
 == Ideas
 
 * Use Apache PDF Box to get information from PDF Files
