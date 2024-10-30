@@ -7,6 +7,10 @@ import java.awt.image.*;
 import java.io.IOException;
 import javax.imageio.*;
 
+/**
+ * Use Swing JFileChooser to choose a file
+ *
+ */
 public class TestSwing {
     public static File chooseFile(File pHomeDirectory) {
 
