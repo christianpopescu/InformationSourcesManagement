@@ -5,17 +5,20 @@ import fr.vadc.java.Sandbox.TestSwing;
 
 import javax.swing.filechooser.FileSystemView;
 import java.io.File;
-import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 /**
  * Information Sources management
  *
  */
 public class ISManagement
 {
+    private static final Logger logger = LogManager.getLogger(ISManagement.class);
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+        logger.info("Application started!");
         File homeDirectoryFile;
         try {
             homeDirectoryFile = new File("E:\\CCP_library");

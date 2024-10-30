@@ -1,4 +1,4 @@
-= Journal and Notes
+= Software Development
 Doc Writer <christian.popescu@outlook.com>
 v 1.0, 2021-11-20
 :sectnums:
@@ -6,68 +6,9 @@ v 1.0, 2021-11-20
 :toclevels: 5
 :pdf-page-size: A3
 
-== The purpose to track the activity on project
+== Introduction
 
-== Log
-
-=== 20/11/2021
-
-* Create project
-
-  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
-
-* Add assembly java plugin
-
-* Add pdfBox pluging
-
-* Add pdfBox tools plugin
-
-[code, xml, ident=4]
-----
-    <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
-    <dependency>
-      <groupId>org.apache.pdfbox</groupId>
-      <artifactId>pdfbox</artifactId>
-      <version>2.0.24</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-tools -->
-    <dependency>
-      <groupId>org.apache.pdfbox</groupId>
-      <artifactId>pdfbox-tools</artifactId>
-      <version>2.0.24</version>
-    </dependency>
-----
-
-* Create class Sandbox and Test pdf methon
-
-* Tested *OK*
-
-== 21/11/2021
-
-* Test Select file by Swing.
-
-* Test print first page of selected file.
-
-* Test show image in Swing screen.
-
-* Test resize image with Swing and saver resized file.
-
-* Add ImageHelper class to resize and save image
-
-== 31/07/2022
-* Last test in jdk 7
-
-== 29/10/2024
-* Work again on the project as it seems to be the right way to have first page of PDF printed as image.
-
-* Set java version to 21.
-
-* Fix some old dependencies.
-
-* Test again.
-
-
-
+The purpose of this document is to describe technical details about this project.
 
 
 == Ideas

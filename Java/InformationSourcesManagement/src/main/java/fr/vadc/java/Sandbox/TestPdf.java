@@ -9,6 +9,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+import static org.apache.pdfbox.pdmodel.PDDocument.*;
+
 public class TestPdf {
 
     public static void testPrintFirstPdfPage() {
