@@ -19,3 +19,36 @@ New version maven multimodule :
 
 == Mutltimodule maven 
 
+. Create parent module
++
+[source, bash]
+----
+mvn archetype:generate -DgroupId=fr.vadc -DartifactId=ISM_Java
+----
++
+image:img/Create_parent_module.png[]
+
+. In the parent pom file add the packaging as pom.
++
+image:img/Parent_packaging_as_pom.png[]
+
+. Go to parent folder  (cd ISM_Java)
+
+. Create UI subproject
++
+[source, bash]
+----
+mvn archetype:generate -DgroupId=fr.vadc -DartifactId=UI_Swing
+----
++
+image:img/Create_UI_Swing_module.png[]
+
+. Create Business Layer
++
+[source, bash]
+----
+mvn archetype:generate -DgroupId=fr.vadc -DartifactId=BusinessLayer
+----
++
+image:img/Create_BusinessLayer_module.png[]
+
