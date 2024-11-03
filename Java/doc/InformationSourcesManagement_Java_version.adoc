@@ -1,0 +1,21 @@
+= Information Sources Management - Java version
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2024-11-03
+:sectnums:
+:toc:
+:toclevels: 5
+:pdf-page-size: A3
+
+== Introduction
+
+A first version of the tool has been created.
+
+New version maven multimodule :
+
+* User interface
+
+* Business logic
+
+
+== Mutltimodule maven 
+
