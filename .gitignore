@@ -29,3 +29,7 @@ bin/
 
 .idea
 target/
+
+# IntelIJ files
+
+*.iml
