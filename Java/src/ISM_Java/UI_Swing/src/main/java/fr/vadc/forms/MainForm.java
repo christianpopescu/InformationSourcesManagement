@@ -1,13 +1,13 @@
 package fr.vadc.forms;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import static javax.swing.JOptionPane.showMessageDialog;
+import fr.vadc.PdfService;
 
 public class MainForm extends JFrame implements ActionListener {
     private static final int DEFAULT_WIDTH = 600;
@@ -17,7 +17,7 @@ public class MainForm extends JFrame implements ActionListener {
     JMenu firstSubMenu;
 
     public MainForm() {
-        intialize();
+        initialize();
         setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
         addWindowListener(new WindowAdapter() {
             @Override
@@ -29,13 +29,14 @@ public class MainForm extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ev) {
         if (ev.getSource() == this.miShowImage) {
-            showMessageDialog(null, "ShowImage menuitem selected");
+            String fileName = "toto.pdf";
+            showMessageDialog(null, PdfService.GetPageImage(fileName));
         } else {
             showMessageDialog(null, ev.getSource().getClass().getName());
         }
     }
 
-    protected void intialize()    {
+    protected void initialize() {
         JPanel panel;
         JLabel label = new JLabel();
         label.setText("Information Source Management");
@@ -49,7 +50,7 @@ public class MainForm extends JFrame implements ActionListener {
         firstSubMenu.add(miShowImage);
         mainMenu.add(miShowImage);
         add(mainMenu);
-        JMenuBar mb=new JMenuBar();
+        JMenuBar mb = new JMenuBar();
         mb.add(mainMenu);
         setJMenuBar(mb);
 
