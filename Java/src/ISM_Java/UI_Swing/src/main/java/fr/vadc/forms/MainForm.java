@@ -29,8 +29,9 @@ public class MainForm extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ev) {
         if (ev.getSource() == this.miShowImage) {
-            String fileName = "toto.pdf";
+            String fileName = "E:\\CCP_library\\Doc_IT\\Computer_Science\\_to_sort\\Computer Science - Mit Press - Principles Of Data Mining.pdf";
             showMessageDialog(null, PdfService.GetPageImage(fileName));
+            PdfService.printPage(fileName,0);
         } else {
             showMessageDialog(null, ev.getSource().getClass().getName());
         }
