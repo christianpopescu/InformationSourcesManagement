@@ -10,11 +10,11 @@ import static javax.swing.JOptionPane.showMessageDialog;
 import fr.vadc.PdfService;
 
 public class MainForm extends JFrame implements ActionListener {
-    private static final int DEFAULT_WIDTH = 600;
-    private static final int DEFAULT_HEIGHT = 400;
+    private static final int DEFAULT_WIDTH = 800;
+    private static final int DEFAULT_HEIGHT = 600;
     private JMenuItem miShowImage;
-    JMenu mainMenu;
-    JMenu firstSubMenu;
+    private JMenu mainMenu;
+    private JMenu firstSubMenu;
 
     public MainForm() {
         initialize();
