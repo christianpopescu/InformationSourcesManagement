@@ -52,3 +52,11 @@ mvn archetype:generate -DgroupId=fr.vadc -DartifactId=BusinessLayer
 +
 image:img/Create_BusinessLayer_module.png[]
 
+. Create UI as Console application
++
+[source, bash]
+----
+mvn archetype:generate -DgroupId=fr.vadc -DartifactId=UI_Console
+----
++
+image:img/Create_UI_Console_module.png[]
