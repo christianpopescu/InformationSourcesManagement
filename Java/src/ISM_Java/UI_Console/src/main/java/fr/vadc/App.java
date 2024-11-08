@@ -15,6 +15,9 @@ public class App {
         String fileName = "E:\\CCP_library\\Doc_IT\\Computer_Science\\_to_sort\\Computer Science - Mit Press - Principles Of Data Mining.pdf";
         PdfService.printPage(fileName,0);
         saveFirstPageAsImage("E:\\CCP_Library_New\\IT\\ComputerScience\\Programming Languages\\Languages\\Java\\Core");
+        Path pathPdfFile = Paths.get(fileName);
+        Path pathToImage = Paths.get("d:\\temp\\");
+        PdfService.printPage(pathPdfFile, 0, pathToImage);
     }
 
     private static void saveFirstPageAsImage(String dirName) {
