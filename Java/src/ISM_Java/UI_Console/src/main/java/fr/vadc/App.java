@@ -2,6 +2,9 @@ package fr.vadc;
 import java.io.*;
 import java.nio.file.*;
 import java.nio.file.attribute.*;
+import fr.vadc.PdfService;
+
+import static javax.swing.JOptionPane.showMessageDialog;
 
 /**
  * Hello world!
@@ -9,7 +12,12 @@ import java.nio.file.attribute.*;
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        String dirName ="E:\\CCP_Library_New\\IT\\ComputerScience\\Programming Languages\\Languages\\Java\\Core";
+        String fileName = "E:\\CCP_library\\Doc_IT\\Computer_Science\\_to_sort\\Computer Science - Mit Press - Principles Of Data Mining.pdf";
+        PdfService.printPage(fileName,0);
+        saveFirstPageAsImage("E:\\CCP_Library_New\\IT\\ComputerScience\\Programming Languages\\Languages\\Java\\Core");
+    }
+
+    private static void saveFirstPageAsImage(String dirName) {
 
         try ( DirectoryStream<Path> dirstrm =
                       Files.newDirectoryStream(Path.of(dirName)) )
